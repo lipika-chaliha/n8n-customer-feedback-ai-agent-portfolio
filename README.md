@@ -94,7 +94,7 @@ Building an AI workflow is only the beginning. Validating data flow, branches, i
 
 ## 📸 Workflow Overview
 
-> **Note:** The workflow screenshot is maintained separately in the project documentation.
+![n8n Customer Feedback AI Agent Workflow](screenshots/workflow-overview.png)
 
 The workflow connects customer feedback submission, AI analysis, personalized response generation, email communication and Google Sheets storage.
 
