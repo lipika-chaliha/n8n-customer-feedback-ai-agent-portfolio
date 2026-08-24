@@ -2,6 +2,60 @@
 
 An AI-powered customer feedback automation workflow built using **n8n, AI, Gmail and Google Sheets**, with a strong focus on **Quality Engineering, data integrity and workflow reliability**.
 
+## ⭐ Portfolio Highlights
+
+This project demonstrates my practical experience in combining **AI Automation + Quality Engineering + Software Testing**.
+
+- 🤖 **n8n AI Workflow Automation**
+- 🧠 **AI/LLM-based sentiment and response generation**
+- 🧪 **End-to-end Quality Engineering**
+- 🔍 **Data flow and data mapping validation**
+- 🐞 **Real defect identification and root-cause analysis**
+- 🔧 **Defect resolution using workflow logic**
+- 🔄 **Regression testing and re-execution**
+- 📊 **Data integrity and duplicate-record validation**
+- 📧 **Gmail integration testing**
+- 📋 **Google Sheets integration and validation**
+
+## 🧪 What I Tested
+
+The workflow was validated from an end-to-end Quality Engineering perspective.
+
+Key testing areas included:
+
+- Functional testing
+- End-to-end workflow validation
+- Branching and workflow logic
+- AI output validation
+- Data mapping validation
+- Email delivery validation
+- Duplicate processing
+- Data integrity
+- Edge-case scenarios
+- Regression testing
+- Workflow re-execution
+
+## 🐞 Defect Investigation
+
+During testing, I identified a duplicate-record issue where:
+
+**1 customer submission → 2 intended emails → 2 Google Sheets records**
+
+The expected behavior was:
+
+**1 customer submission → 2 intended emails → 1 Google Sheets record**
+
+I analyzed the workflow data flow and identified that multiple workflow items were reaching the Google Sheets step.
+
+Instead of changing the working email logic, I separated the workflow paths and introduced a **Limit** node before Google Sheets.
+
+### Result
+
+**1 customer submission → 2 intended emails → 1 consolidated Google Sheets record**
+
+The scenario was subsequently added to regression coverage.
+
+
 ## 🎯 Project Overview
 
 This project automates the customer feedback process from submission to AI analysis, personalized response generation, email communication and data storage.
